@@ -105,21 +105,3 @@ Each condition is run via its module's CLI, e.g.:
 python -m experiments.initial_gold_injection.run --config configs/initial_gold_injection_confirmatory_no_injection.yaml
 python -m experiments.distributed_evidence_replay.run --config configs/distributed_evidence_replay.yaml
 ```
-
-Requires a sibling checkout of `FigBrowse` (agent framework) and
-`BrowseComp-Plus` (benchmark data), plus an Azure OpenAI key in `.env`
-(never committed — see `.gitignore`).
-
-## Limitations
-
-Single agent (GPT-4o), single retriever, single 100-question split; no claim
-of generalization to other models, retrievers, or benchmarks. Other known
-limitations: conditions A and B use different action budgets (10 vs. 8),
-which cannot explain B's accuracy advantage but blocks a strictly
-budget-matched efficiency comparison; the distributed-evidence replay used a
-single placement seed; the LLM-based answer judge is an imperfect
-ground-truth proxy (a manual audit corrected 3 judge errors in condition A,
-detailed in `outputs/initial_gold_injection_confirmatory_no_injection/`); and
-the `cited_doc_ids` field in the agent's final-answer schema is empty across
-every condition-B record despite being requested in the prompt, so
-citation-based grounding could not be assessed directly from the logs.
