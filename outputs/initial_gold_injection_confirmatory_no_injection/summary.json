@@ -1,0 +1,74 @@
+{
+  "overall": {
+    "n_attempted": 100,
+    "n_completed": 100,
+    "n_scored": 100,
+    "accuracy": 0.18,
+    "accuracy_ci95": [
+      0.11,
+      0.26
+    ],
+    "immediate_answer_rate": 0.0,
+    "immediate_correct_rate": 0.0,
+    "immediate_incorrect_rate": 0.0,
+    "redundant_search_rate": 1.0,
+    "actions_to_answer_mean": 8.05,
+    "actions_to_answer_median": 9.0,
+    "search_calls_mean": 5.45,
+    "search_calls_median": 6.0,
+    "get_document_calls_mean": 1.6,
+    "get_document_calls_median": 2.0,
+    "injected_document_coverage_mean": 0.0,
+    "correct_efficiency": {
+      "n_correct": 18,
+      "actions_to_answer_mean": 6.111111111111111,
+      "actions_to_answer_median": 5.0,
+      "search_calls_mean": 3.7777777777777777,
+      "search_calls_median": 3.0,
+      "get_document_calls_mean": 1.3333333333333333,
+      "get_document_calls_median": 1.0,
+      "coverage_mean": 0.0
+    },
+    "failure_counts": {
+      "CORRECT": 18,
+      "WRONG": 82
+    }
+  },
+  "by_position": {
+    "no_injection": {
+      "n_attempted": 100,
+      "n_completed": 100,
+      "n_scored": 100,
+      "accuracy": 0.18,
+      "accuracy_ci95": [
+        0.11,
+        0.26
+      ],
+      "immediate_answer_rate": 0.0,
+      "immediate_correct_rate": 0.0,
+      "immediate_incorrect_rate": 0.0,
+      "redundant_search_rate": 1.0,
+      "actions_to_answer_mean": 8.05,
+      "actions_to_answer_median": 9.0,
+      "search_calls_mean": 5.45,
+      "search_calls_median": 6.0,
+      "get_document_calls_mean": 1.6,
+      "get_document_calls_median": 2.0,
+      "injected_document_coverage_mean": 0.0,
+      "correct_efficiency": {
+        "n_correct": 18,
+        "actions_to_answer_mean": 6.111111111111111,
+        "actions_to_answer_median": 5.0,
+        "search_calls_mean": 3.7777777777777777,
+        "search_calls_median": 3.0,
+        "get_document_calls_mean": 1.3333333333333333,
+        "get_document_calls_median": 1.0,
+        "coverage_mean": 0.0
+      },
+      "failure_counts": {
+        "CORRECT": 18,
+        "WRONG": 82
+      }
+    }
+  }
+}

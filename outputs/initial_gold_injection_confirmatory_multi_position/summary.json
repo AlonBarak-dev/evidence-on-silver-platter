@@ -1,0 +1,121 @@
+{
+  "overall": {
+    "n_attempted": 200,
+    "n_completed": 200,
+    "n_scored": 200,
+    "accuracy": 0.725,
+    "accuracy_ci95": [
+      0.665,
+      0.785
+    ],
+    "immediate_answer_rate": 0.335,
+    "immediate_correct_rate": 0.29,
+    "immediate_incorrect_rate": 0.045,
+    "redundant_search_rate": 0.28,
+    "actions_to_answer_mean": 2.59,
+    "actions_to_answer_median": 2.0,
+    "search_calls_mean": 0.705,
+    "search_calls_median": 0.0,
+    "get_document_calls_mean": 0.885,
+    "get_document_calls_median": 1.0,
+    "injected_document_coverage_mean": 0.16146554834054833,
+    "correct_efficiency": {
+      "n_correct": 145,
+      "actions_to_answer_mean": 1.9448275862068964,
+      "actions_to_answer_median": 2,
+      "search_calls_mean": 0.2620689655172414,
+      "search_calls_median": 0,
+      "get_document_calls_mean": 0.6827586206896552,
+      "get_document_calls_median": 1,
+      "coverage_mean": 0.12628750559785043
+    },
+    "failure_counts": {
+      "CORRECT_AFTER_DOCUMENT_ACCESS": 61,
+      "CORRECT_AFTER_EXTRA_SEARCH": 26,
+      "CORRECT_IMMEDIATE": 58,
+      "WRONG_AFTER_PARTIAL_EVIDENCE": 40,
+      "WRONG_WITHOUT_OPENING_EVIDENCE": 12,
+      "WRONG_AFTER_FULL_EVIDENCE": 3
+    }
+  },
+  "by_position": {
+    "beginning": {
+      "n_attempted": 100,
+      "n_completed": 100,
+      "n_scored": 100,
+      "accuracy": 0.72,
+      "accuracy_ci95": [
+        0.63,
+        0.81
+      ],
+      "immediate_answer_rate": 0.3,
+      "immediate_correct_rate": 0.27,
+      "immediate_incorrect_rate": 0.03,
+      "redundant_search_rate": 0.38,
+      "actions_to_answer_mean": 3.05,
+      "actions_to_answer_median": 2.0,
+      "search_calls_mean": 1.06,
+      "search_calls_median": 0.0,
+      "get_document_calls_mean": 0.99,
+      "get_document_calls_median": 1.0,
+      "injected_document_coverage_mean": 0.17567604617604618,
+      "correct_efficiency": {
+        "n_correct": 72,
+        "actions_to_answer_mean": 2.1805555555555554,
+        "actions_to_answer_median": 2.0,
+        "search_calls_mean": 0.4027777777777778,
+        "search_calls_median": 0.0,
+        "get_document_calls_mean": 0.7777777777777778,
+        "get_document_calls_median": 1.0,
+        "coverage_mean": 0.13943602693602694
+      },
+      "failure_counts": {
+        "CORRECT_AFTER_DOCUMENT_ACCESS": 27,
+        "CORRECT_AFTER_EXTRA_SEARCH": 18,
+        "CORRECT_IMMEDIATE": 27,
+        "WRONG_AFTER_PARTIAL_EVIDENCE": 20,
+        "WRONG_AFTER_FULL_EVIDENCE": 2,
+        "WRONG_WITHOUT_OPENING_EVIDENCE": 6
+      }
+    },
+    "mid_trajectory": {
+      "n_attempted": 100,
+      "n_completed": 100,
+      "n_scored": 100,
+      "accuracy": 0.73,
+      "accuracy_ci95": [
+        0.64,
+        0.81
+      ],
+      "immediate_answer_rate": 0.37,
+      "immediate_correct_rate": 0.31,
+      "immediate_incorrect_rate": 0.06,
+      "redundant_search_rate": 0.18,
+      "actions_to_answer_mean": 2.13,
+      "actions_to_answer_median": 2.0,
+      "search_calls_mean": 0.35,
+      "search_calls_median": 0.0,
+      "get_document_calls_mean": 0.78,
+      "get_document_calls_median": 1.0,
+      "injected_document_coverage_mean": 0.1472550505050505,
+      "correct_efficiency": {
+        "n_correct": 73,
+        "actions_to_answer_mean": 1.7123287671232876,
+        "actions_to_answer_median": 2,
+        "search_calls_mean": 0.1232876712328767,
+        "search_calls_median": 0,
+        "get_document_calls_mean": 0.589041095890411,
+        "get_document_calls_median": 1,
+        "coverage_mean": 0.11331910099033386
+      },
+      "failure_counts": {
+        "CORRECT_AFTER_DOCUMENT_ACCESS": 34,
+        "CORRECT_IMMEDIATE": 31,
+        "WRONG_AFTER_PARTIAL_EVIDENCE": 20,
+        "WRONG_WITHOUT_OPENING_EVIDENCE": 6,
+        "CORRECT_AFTER_EXTRA_SEARCH": 8,
+        "WRONG_AFTER_FULL_EVIDENCE": 1
+      }
+    }
+  }
+}

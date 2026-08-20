@@ -1,0 +1,80 @@
+{
+  "overall": {
+    "n_attempted": 100,
+    "n_completed": 100,
+    "n_scored": 100,
+    "accuracy": 0.64,
+    "accuracy_ci95": [
+      0.54,
+      0.73
+    ],
+    "immediate_answer_rate": 0.31,
+    "immediate_correct_rate": 0.28,
+    "immediate_incorrect_rate": 0.03,
+    "redundant_search_rate": 0.0,
+    "actions_to_answer_mean": 1.79,
+    "actions_to_answer_median": 2.0,
+    "search_calls_mean": 0,
+    "search_calls_median": 0.0,
+    "get_document_calls_mean": 0.79,
+    "get_document_calls_median": 1.0,
+    "injected_document_coverage_mean": 0.1589935064935065,
+    "correct_efficiency": {
+      "n_correct": 64,
+      "actions_to_answer_mean": 1.609375,
+      "actions_to_answer_median": 2.0,
+      "search_calls_mean": 0,
+      "search_calls_median": 0.0,
+      "get_document_calls_mean": 0.609375,
+      "get_document_calls_median": 1.0,
+      "coverage_mean": 0.10363455988455988
+    },
+    "failure_counts": {
+      "CORRECT_AFTER_DOCUMENT_ACCESS": 36,
+      "CORRECT_IMMEDIATE": 28,
+      "WRONG_AFTER_PARTIAL_EVIDENCE": 32,
+      "WRONG_WITHOUT_OPENING_EVIDENCE": 3,
+      "WRONG_AFTER_FULL_EVIDENCE": 1
+    }
+  },
+  "by_position": {
+    "beginning_no_search": {
+      "n_attempted": 100,
+      "n_completed": 100,
+      "n_scored": 100,
+      "accuracy": 0.64,
+      "accuracy_ci95": [
+        0.54,
+        0.73
+      ],
+      "immediate_answer_rate": 0.31,
+      "immediate_correct_rate": 0.28,
+      "immediate_incorrect_rate": 0.03,
+      "redundant_search_rate": 0.0,
+      "actions_to_answer_mean": 1.79,
+      "actions_to_answer_median": 2.0,
+      "search_calls_mean": 0,
+      "search_calls_median": 0.0,
+      "get_document_calls_mean": 0.79,
+      "get_document_calls_median": 1.0,
+      "injected_document_coverage_mean": 0.1589935064935065,
+      "correct_efficiency": {
+        "n_correct": 64,
+        "actions_to_answer_mean": 1.609375,
+        "actions_to_answer_median": 2.0,
+        "search_calls_mean": 0,
+        "search_calls_median": 0.0,
+        "get_document_calls_mean": 0.609375,
+        "get_document_calls_median": 1.0,
+        "coverage_mean": 0.10363455988455988
+      },
+      "failure_counts": {
+        "CORRECT_AFTER_DOCUMENT_ACCESS": 36,
+        "CORRECT_IMMEDIATE": 28,
+        "WRONG_AFTER_PARTIAL_EVIDENCE": 32,
+        "WRONG_WITHOUT_OPENING_EVIDENCE": 3,
+        "WRONG_AFTER_FULL_EVIDENCE": 1
+      }
+    }
+  }
+}

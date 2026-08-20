@@ -1,0 +1,36 @@
+{
+  "position_a": "no_injection",
+  "position_b": "beginning",
+  "n_paired_questions": 100,
+  "budget_by_position": {
+    "no_injection": [
+      10
+    ],
+    "beginning": [
+      8
+    ]
+  },
+  "budget_parity_ok": false,
+  "contingency_table": {
+    "both_correct": 16,
+    "a_only_correct": 2,
+    "b_only_correct": 56,
+    "both_incorrect": 26
+  },
+  "mcnemar_p_value": 1.1879386363489175e-14,
+  "search_calls_diff": {
+    "mean_diff": 4.39,
+    "ci_lo": 3.96,
+    "ci_hi": 4.82
+  },
+  "actions_to_answer_diff": {
+    "mean_diff": 5.0,
+    "ci_lo": 4.49,
+    "ci_hi": 5.51
+  },
+  "redundant_search_rate_diff": {
+    "mean_diff": 0.62,
+    "ci_lo": 0.52,
+    "ci_hi": 0.71
+  }
+}

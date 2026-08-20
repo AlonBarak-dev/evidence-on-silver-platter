@@ -1,0 +1,49 @@
+experiment_name: initial_gold_injection_confirmatory_search_disabled
+dataset: browsecomp_plus
+split: confirmatory
+sample_limit: 100
+seed: 42
+
+figbrowse_path: ../FigBrowse
+
+model:
+  name: USE_EXISTING_FIGBROWSE_DEFAULT
+  temperature: 0
+
+agent:
+  # Same budget as condition B (beginning) for a fair paired comparison.
+  max_post_injection_actions: 8
+  enable_search: true   # overridden to false in code specifically for this position
+  enable_get_document: true
+
+injection:
+  prefer_evidence_documents: true
+  fallback_to_gold_documents: true
+  shuffle_documents: true
+  expose_full_text_immediately: false
+  # Condition E: beginning-of-trajectory injection, same as "beginning",
+  # but with the search tool removed (get_document + answer only). An
+  # oracle diagnostic — the agent knows evidence was already surfaced.
+  positions: [beginning_no_search]
+
+benchmark:
+  name: browsecomp_plus
+  questions_path: ../BrowseComp-Plus/topics-qrels/queries.tsv
+  corpus_path: ../BrowseComp-Plus/data/browsecomp_plus_corpus
+  evidence_qrels_path: ../BrowseComp-Plus/topics-qrels/qrel_evidence.txt
+  gold_qrels_path: ../BrowseComp-Plus/topics-qrels/qrel_golds.txt
+  answers_path: ../BrowseComp-Plus/data/browsecomp_plus_decrypted.jsonl
+
+retriever:
+  id: qwen3-4b
+  type: qwen3_dense
+  index_path: indexes/qwen3-embedding-4b
+  query_encoder: Qwen/Qwen3-Embedding-4B
+  task_prefix: "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:"
+  normalize: true
+  pooling: eos
+  top_k: 5
+  preview_tokens: 512
+
+output_dir: outputs/initial_gold_injection_confirmatory_search_disabled
+resume: true
